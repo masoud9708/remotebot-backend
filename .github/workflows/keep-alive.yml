@@ -1,0 +1,15 @@
+name: Keep Render Alive
+
+on:
+  schedule:
+    # اجرا هر ۱۴ دقیقه (کمی قبل از ۱۵ دقیقه خواب Render)
+    - cron: '*/14 * * * *'
+  workflow_dispatch: # برای اجرای دستی از تب Actions
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Health Endpoint
+        run: |
+          curl -s -o /dev/null -w "HTTP Status: %{http_code}\n" https://remotebot-backend.onrender.com/health
