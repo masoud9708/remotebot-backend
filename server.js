@@ -5,8 +5,8 @@
 const express = require("express");
 const app = express();
 
-const TELEGRAM_API = "https://api.telegram.org"\;
-const UPSTASH_URL = "https://sure-flea-127238.upstash.io"\;
+const TELEGRAM_API = "https://api.telegram.org";
+const UPSTASH_URL = "https://sure-flea-127238.upstash.io";
 const UPSTASH_TOKEN = "gQAAAAAAAfEGAAIgcDFmMjY1NTBmMzFhODI0OTY1YjQ1MjdjYTc1ZjRjNGRjMA";
 
 // ═══════════════════════════════════════════════════════════════
